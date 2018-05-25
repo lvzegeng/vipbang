@@ -101,7 +101,6 @@ class Home extends React.Component {
             <div className={styles.section2}>
               <img src={require('../assets/home/iphone.png')} className={styles.iphone} alt="" />
             </div>
-
           </div>
         </div>
 

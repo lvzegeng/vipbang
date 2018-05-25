@@ -34,7 +34,7 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <img src={require('../assets/aboutBanner.png')} style={{ width: '100%', minWidth: '800px' }} alt="" />
+        <img src={require('../assets/aboutBanner.png')} style={{ width: '100%' }} alt="" />
         <div className={styles.about}>
           <div className={styles.left}>
             <VideoPlayer {...videoJsOptions} />

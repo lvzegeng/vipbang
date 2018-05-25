@@ -38,14 +38,12 @@ class Head extends React.Component {
           <Link to={'/'}>
             <img className={styles.logo} src={require('../assets/logo.png')} alt="" />
           </Link>
-          <div style={{ flex: 1 }} />
           <span className={styles.link}>
             <NavLink to={'/'} activeClassName={styles.active} exact>首页</NavLink>
             <NavLink to={'/Solute'} activeClassName={styles.active}>解决方案和服务</NavLink>
             <NavLink to={'/Treads'} activeClassName={styles.active} isActive={this.active}>公司动态</NavLink>
             <NavLink to={'/About'} activeClassName={styles.active}>关于我们</NavLink>
           </span>
-          <div style={{ flex: 1 }} />
           <span className={styles.button}>
             <Button
               type="primary" onClick={() => {

@@ -1,21 +1,34 @@
 @font: rgb(0, 175, 206);
 @try: rgb(255, 178, 30);
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
   body .head {
-    padding: 0;
-
     .logo {
-      width: 14rem;
+      width: 10rem;
+    }
+
+    .link {
+      margin: 0;
+
+      a {
+        margin: 0.5rem 0.2rem;
+        padding: 0.5em 0.2em;
+      }
+    }
+
+    .button {
+      button:first-child {
+        margin-right: 0.5rem;
+      }
     }
   }
 }
 
 .head {
-  padding: 0 15%;
-  margin: 1rem auto;
+  margin: 1rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -26,6 +39,7 @@
 
 .link {
   font-size: 1.1rem;
+  margin: 0 2em;
 
   a {
     margin: 0.5rem;
