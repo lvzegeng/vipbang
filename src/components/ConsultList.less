@@ -1,0 +1,59 @@
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container {
+  display: flex;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  border-bottom: solid 1px #ccc;
+
+  &:first-child {
+    border-top: 1.5px solid rgb(0, 175, 206);
+  }
+
+  .img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .text {
+    flex: 1;
+    color: gray;
+    margin-left: 0.6rem;
+    overflow: hidden;
+
+    .head {
+      font-size: 1.2rem;
+      //font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .content {
+      font-size: 0.9rem;
+      height: 3em;
+      margin: 0.5rem 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .last {
+      display: flex;
+      font-size: 0.8rem;
+      color: #bbb;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .category {
+        margin-left: 2em;
+      }
+    }
+  }
+}
+

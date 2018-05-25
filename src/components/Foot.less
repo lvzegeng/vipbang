@@ -1,0 +1,59 @@
+.foot {
+  background-color: rgb(51, 51, 51);
+  color: #ccc;
+  line-height: 3em;
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  right: 1rem;
+  bottom: 8rem;
+  width: 2.5rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 0.2rem 0.2rem;
+  background-color: white;
+
+  div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.3rem;
+    cursor: pointer;
+  }
+  .top {
+    background-image: url("../assets/top.png");
+    &:hover {
+      background-image: url("../assets/topHover.png");
+    }
+  }
+  .call {
+    background-image: url("../assets/call.png");
+    &:hover {
+      background-image: url("../assets/callHover.png");
+    }
+  }
+  .wx {
+    background-image: url("../assets/wx.png");
+    &:hover {
+      background-image: url("../assets/wxHover.png");
+    }
+  }
+}
+
+.wxShow {
+  display: none;
+  position: fixed;
+  right: 4rem;
+  bottom: 3rem;
+  width: 8rem;
+}
+
+.callShow {
+  display: none;
+  position: fixed;
+  right: 4rem;
+  bottom: 10rem;
+  width: 8rem;
+}

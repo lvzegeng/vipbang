@@ -1,0 +1,289 @@
+
+.body {
+  width: 70%;
+  min-width: 800px;
+  margin: auto;
+}
+
+.carousel {
+  margin-bottom: 3rem;
+
+  .wrapper {
+    position: relative;
+    padding-bottom: 10%;
+    height: 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.introduce {
+  display: flex;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  .body;
+
+  .left {
+    flex: 1;
+    text-align: right;
+    padding: 0 1rem;
+    border-right: solid 1px #ccc;
+
+    .chinese {
+      font-size: 1.5rem;
+    }
+    .english {
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .right {
+    flex: 1;
+    padding: 1rem;
+    line-height: 1.5em;
+    font-size: 1.05rem;
+    p {
+      text-indent: 2.2em;
+    }
+    .flex {
+      display: flex;
+      font-size: 0.8rem;
+      align-content: center;
+    }
+    .flex1 {
+      flex: 1;
+      margin: 0.2rem;
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 0.2rem;
+      align-self: auto;
+      text-align: center;
+      background-color: rgb(252, 255, 255);
+
+      img {
+        width: 65%;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+
+    }
+  }
+}
+
+.chinese {
+  font-size: 1.5rem;
+}
+
+.english {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.form {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
+  @paddingTop: 4rem;
+
+  .section {
+    display: flex;
+    .body;
+
+    .section1 {
+      padding-top: @paddingTop;
+
+      ul {
+        list-style: url("../assets/home/li.png");
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 2em;
+      }
+
+      .section11 {
+        display: flex;
+        text-align: left;
+        align-items: center;
+
+        img {
+          width: 5rem;
+          height: 5rem;
+          margin-right: 0.5rem;
+        }
+
+        .text1 {
+          font-size: 1.5rem;
+          color: rgb(0, 175, 206);
+        }
+
+        .text2 {
+          font-size: 1.1rem;
+        }
+      }
+
+    }
+    .section2 {
+      flex: 2;
+      margin: 0 1rem;
+      &:first-child {
+        padding-top: @paddingTop;
+      }
+
+      img {
+        width: 90%;
+
+        &.iphone {
+          width: 70%;
+        }
+      }
+    }
+    .section3 {
+      flex: 0.5;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+.function {
+  padding: 3rem 0;
+  text-align: center;
+
+  .section {
+    display: flex;
+    .body;
+
+    &:nth-child(3) {
+      width: 50%;
+      min-width: 650px;
+      margin-bottom: 1rem;
+    }
+
+    .section1 {
+      flex: 1;
+      margin: 2rem;
+
+      img {
+        margin-bottom: 1rem;
+        max-width: 100%;
+      }
+
+      .lineImg {
+        width: 100%;
+      }
+
+      .text1 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      .text2 {
+        font-size: 1rem;
+        text-align: left;
+        color: #aaa;
+      }
+    }
+  }
+}
+
+.advantage {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
+
+  img {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .text1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+  }
+  .text2 {
+    color: #aaa;
+    font-size: 1rem;
+  }
+
+}
+
+.service {
+  text-align: center;
+  padding: 3rem 0;
+
+  .section {
+    display: flex;
+    color: rgb(154, 154, 154);
+    font-size: 1.1rem;
+    .body;
+
+    .section1 {
+      flex: 1;
+      margin: 1rem 1.5rem 0 1.5rem;
+
+      img {
+        width: 100%;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+.customer {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
+
+  .custom {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    .body;
+
+    div {
+      flex: 1;
+      margin: 0.5em 1em;
+      background-color: white;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 80%;
+      }
+    }
+
+  }
+
+}
+
+.contacts {
+  background-image: url("../assets/home/bg.png");
+  background-size: 100% 100%;
+
+  .section {
+    display: flex;
+    .body;
+    width: 60%;
+
+    img {
+      flex: 1;
+      margin: 3rem 1rem;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
