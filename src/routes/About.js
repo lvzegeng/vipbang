@@ -55,25 +55,25 @@ class About extends React.Component {
 
           <div className={styles.section}>
             <div className={styles.section1}>
-              <img src={require('../assets/about/intro1.png')} alt=""/>
+              <img src={require('../assets/about/intro1.png')} alt="" />
               <div className={styles.text}>股东及管理层均为</div>
               <div className={styles.text}>母婴行业专家及业内精英，</div>
               <div className={styles.text}>深耕行业30年</div>
             </div>
             <div className={styles.section1}>
-              <img src={require('../assets/about/intro2.png')} alt=""/>
+              <img src={require('../assets/about/intro2.png')} alt="" />
               <div className={styles.text}>曾成功打造</div>
               <div className={styles.text}>全国知名母婴会员平台，</div>
               <div className={styles.text}>团队研发及创新能力一流</div>
             </div>
             <div className={styles.section1}>
-              <img src={require('../assets/about/intro3.png')} alt=""/>
+              <img src={require('../assets/about/intro3.png')} alt="" />
               <div className={styles.text}>专业、快乐、严谨、有梦想</div>
               <div className={styles.text}>、会创新，具有服务意识，</div>
               <div className={styles.text}>做最懂消费者的平台</div>
             </div>
             <div className={styles.section1}>
-              <img src={require('../assets/about/intro4.png')} alt=""/>
+              <img src={require('../assets/about/intro4.png')} alt="" />
               <div className={styles.text}>为做一个最能为母婴门店创</div>
               <div className={styles.text}>造会员价值的平台而努力！</div>
             </div>
@@ -85,30 +85,61 @@ class About extends React.Component {
           <h2>核心团队</h2>
 
           <div className={styles.section}>
-            <img src={require('../assets/about/team1.png')} alt=""/>
+            <img src={require('../assets/about/team1.png')} alt="" />
             <div className={styles.section1}>
               <div className={styles.text1}>覃琴</div>
-              <div className={styles.text2}>广州启尔智信息科技CEO</div>
+              <div className={styles.text3}>广州启尔智信息科技CEO</div>
               <div className={styles.text2}>广东省早期教育行业协会理事</div>
               <div className={styles.text2}>中山大学工商管理硕士</div>
               <div className={styles.text2}>国家中级育婴师</div>
               <div className={styles.text2}>曾游学法国里昂商学院</div>
-              <div className={styles.text2}>从事婴童行业10年，曾任合生元集团高管，妈妈100创始团队成员之一，</div>
-              <div className={styles.text2}>负责会员体系搭建及会员营销平台运营</div>
-              <div className={styles.text2}>从事快消行业3年，曾担任康师傅饮品核心产品经理，</div>
-              <div className={styles.text2}>负责华南区域的品牌推广及通路行销</div>
+              <div
+                className={[styles.text2, styles.margin].join(' ')}
+              >从事婴童行业10年，曾任合生元集团高管，妈妈100创始团队成员之一，负责会员体系搭建及会员营销平台运营
+              </div>
+              <div className={styles.text2}>从事快消行业3年，曾担任康师傅饮品核心产品经理，负责华南区域的品牌推广及通路行销</div>
+            </div>
+          </div>
+
+          <div className={styles.section}>
+            <div className={styles.section1}>
+              <div className={styles.text1}>熊德林</div>
+              <div className={styles.text3}>广州启尔智信息科技CTO</div>
+              <div className={styles.text2}>武汉大学计算机硕士</div>
+              <div className={styles.text2}>中山大学岭南学院EMBA</div>
+              <div className={[styles.text2, styles.margin].join(' ')}>从事婴童行业10年，曾任合生元集团高管，妈妈100技术总监</div>
+              <div className={styles.text2}>合生元妈妈100创始团队成员，负责会员平台及电商平台设计研发</div>
+              <div className={styles.text2}>从事互联网/移动互联网行业14年</div>
+              <div className={styles.text2}>有丰富的App及微信公众号开发经验</div>
+            </div>
+            <img src={require('../assets/about/team2.png')} alt="" />
+          </div>
+
+          <div className={styles.section}>
+            <img src={require('../assets/about/team3.png')} alt="" />
+            <div className={styles.section1}>
+              <div className={styles.text1}>周如祥</div>
+              <div className={styles.text3}>广州启尔智信息科技战略顾问</div>
+              <div className={styles.text2}>香港大学工商管理硕士</div>
+              <div className={[styles.text2, styles.margin].join(' ')}>行业资深内控与战略管理专家</div>
+              <div className={styles.text2}>从事婴童行业三十年</div>
+              <div className={styles.text2}>国内数百零售连锁企业首席顾问</div>
+              <div className={styles.text2}>强生、合生元、茵茵等品牌首席顾问</div>
+              <div className={styles.text2}>中国母婴产业零售商大会发起人</div>
+              <div className={styles.text2}>启尔智（中国）创始人</div>
             </div>
           </div>
 
         </div>
 
-        <img src={require('../assets/about.png')} style={{ width: '100%', minWidth: '800px' }} alt="" />
-
-        <div id="allmap" className={styles.map} />
-        <div className={styles.mapSub}>
-          <img src={require('../assets/mapSub1.png')} alt="" />
-          <img src={require('../assets/mapSub2.png')} className={styles.mapSub2} alt="" />
-          <img src={require('../assets/mapSub3.png')} alt="" />
+        <div className={styles.contact}>
+          <h2>联系我们</h2>
+          <div id="allmap" className={styles.map} />
+          <div className={styles.mapSub}>
+            <img src={require('../assets/mapSub1.png')} alt="" />
+            <img src={require('../assets/mapSub2.png')} className={styles.mapSub2} alt="" />
+            <img src={require('../assets/mapSub3.png')} alt="" />
+          </div>
         </div>
       </div>
     );
