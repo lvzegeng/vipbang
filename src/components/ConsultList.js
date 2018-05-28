@@ -28,7 +28,7 @@ class ConsultList extends React.Component {
 const Consult = (props) => {
   return (
     <Link
-      to={`/TreadsContent/${props.data.consultId}?category=${props.category}`} className={styles.container}
+      to={`/treadsContent/${props.data.consultId}?category=${props.category}`} className={styles.container}
       key={props.index}
     >
 

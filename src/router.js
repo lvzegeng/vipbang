@@ -53,10 +53,10 @@ function RouterConfig({ history, app }) {
         <Head />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/About" exact component={About} />
-          <Route path="/Solute" exact component={Solute} />
-          <Route path="/Treads" component={Treads} />
-          <Route path="/TreadsContent/:resultId" component={TreadsContent} />
+          <Route path="/about" exact component={About} />
+          <Route path="/solute" exact component={Solute} />
+          <Route path="/treads" component={Treads} />
+          <Route path="/treadsContent/:resultId" component={TreadsContent} />
           <Redirect to="/" />
         </Switch>
         <Foot />

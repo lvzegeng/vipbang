@@ -35,16 +35,16 @@ class Treads extends React.Component {
             <NavLink to={`${match.url}`} activeClassName={styles.active} exact>
               <img src={require('../assets/CompanyNews.png')} alt="" />公司动态
             </NavLink>
-            <NavLink to={`${match.url}/NewsCoverage`} activeClassName={styles.active}>
+            <NavLink to={`${match.url}/newsCoverage`} activeClassName={styles.active}>
               <img src={require('../assets/NewsCoverage.png')} alt="" />新闻媒体报道
             </NavLink>
-            <NavLink to={`${match.url}/IndustryAnalysis`} activeClassName={styles.active}>
+            <NavLink to={`${match.url}/industryAnalysis`} activeClassName={styles.active}>
               <img src={require('../assets/IndustryAnalysis.png')} alt="" />行业分析报告
             </NavLink>
-            <NavLink to={`${match.url}/PreciseMarketing`} activeClassName={styles.active}>
+            <NavLink to={`${match.url}/preciseMarketing`} activeClassName={styles.active}>
               <img src={require('../assets/PreciseMarketing.png')} alt="" />精准营销智库
             </NavLink>
-            <NavLink to={`${match.url}/ProductUpgrade`} activeClassName={styles.active}>
+            <NavLink to={`${match.url}/productUpgrade`} activeClassName={styles.active}>
               <img src={require('../assets/ProductUpgrade.png')} alt="" />产品升级公告
             </NavLink>
           </div>

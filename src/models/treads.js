@@ -14,9 +14,9 @@ export default {
   subscriptions: {
     setup({dispatch, history}) {  // eslint-disable-line
       history.listen((location) => {
-        if (location.pathname === '/Treads' || location.pathname === '/Treads/NewsCoverage' || location.pathname === '/Treads/IndustryAnalysis' || location.pathname === '/Treads/PreciseMarketing' || location.pathname === '/Treads/ProductUpgrade') {
+        if (location.pathname === '/treads' || location.pathname === '/treads/newsCoverage' || location.pathname === '/treads/industryAnalysis' || location.pathname === '/treads/preciseMarketing' || location.pathname === '/treads/productUpgrade') {
           dispatch({ type: 'fetch', payload: { page: 1, pathname: location.pathname } });
-        } else if (location.pathname.startsWith('/TreadsContent')) {
+        } else if (location.pathname.startsWith('/treadsContent')) {
           const consultId = parseFloat(location.pathname.slice(15));
           const category = queryString.parse(location.search).category;
           dispatch({ type: 'getTreads', payload: { consultId, category } });
@@ -29,15 +29,15 @@ export default {
     * fetch({payload}, {call, put}) {  // eslint-disable-line
       const { pathname, page } = payload;
       let data;
-      if (pathname === '/Treads') {
+      if (pathname === '/treads') {
         data = yield call(query, page || 1);
-      } else if (pathname === '/Treads/NewsCoverage') {
+      } else if (pathname === '/treads/newsCoverage') {
         data = yield call(query, page || 1, 'category=新闻媒体报道');
-      } else if (pathname === '/Treads/IndustryAnalysis') {
+      } else if (pathname === '/treads/industryAnalysis') {
         data = yield call(query, page || 1, 'category=行业分析报告');
-      } else if (pathname === '/Treads/PreciseMarketing') {
+      } else if (pathname === '/treads/preciseMarketing') {
         data = yield call(query, page || 1, 'category=精准营销智库');
-      } else if (pathname === '/Treads/ProductUpgrade') {
+      } else if (pathname === '/treads/productUpgrade') {
         data = yield call(query, page || 1, 'category=产品升级公告');
       }
       yield put({ type: 'save', payload: { treads: data.data } });

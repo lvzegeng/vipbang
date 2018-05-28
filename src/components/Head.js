@@ -12,7 +12,7 @@ class Head extends React.Component {
   }
 
   active = (match, location) => {
-    return (location.pathname.startsWith('/Treads'));
+    return (location.pathname.startsWith('/treads'));
   }
 
   showModal = () => {
@@ -40,9 +40,9 @@ class Head extends React.Component {
           </Link>
           <span className={styles.link}>
             <NavLink to={'/'} activeClassName={styles.active} exact>首页</NavLink>
-            <NavLink to={'/Solute'} activeClassName={styles.active}>解决方案和服务</NavLink>
-            <NavLink to={'/Treads'} activeClassName={styles.active} isActive={this.active}>公司动态</NavLink>
-            <NavLink to={'/About'} activeClassName={styles.active}>关于我们</NavLink>
+            <NavLink to={'/solute'} activeClassName={styles.active}>解决方案和服务</NavLink>
+            <NavLink to={'/treads'} activeClassName={styles.active} isActive={this.active}>公司动态</NavLink>
+            <NavLink to={'/about'} activeClassName={styles.active}>关于我们</NavLink>
           </span>
           <span className={styles.button}>
             <Button
