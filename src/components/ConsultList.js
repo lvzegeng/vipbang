@@ -7,7 +7,6 @@ import moment from 'moment';
 
 class ConsultList extends React.Component {
 
-
   render() {
     return (
       <div style={{ flex: 1, overflow: 'hidden' }}>

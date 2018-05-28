@@ -1,31 +1,31 @@
 @width: 70%;
 
 @media screen and (max-width: 950px) {
-  .introduce, .form .section, .form .section2 img, .function .section, .advantage img, .customer .custom, .contacts .section {
-    width: 100% !important;
-  }
-  .introduce .right .flex1 img:first-child{
-    width: 65%;
-  }
-  .function .section:nth-child(3){
-    width: 85% !important;
-  }
+  body {
+    .introduce, .form .section, .form .section2 img, .function .section, .advantage img, .customer .custom, .contacts .section {
+      width: 100%;
+    }
+    .introduce .right .flex1 img:first-child {
+      width: 65%;
+    }
+    .function .section:nth-child(3) {
+      width: 85%;
+    }
 
-  .service .section{
-    width: 100% !important;
+    .service .section {
+      width: 100%;
 
-    .section1{
-      margin: 1rem 0.5rem 0 0.5rem !important;
+      .section1 {
+        margin: 1rem 0.5rem 0 0.5rem;
 
-      img{
-        width: 90%;
+        img {
+          width: 90%;
+        }
       }
     }
   }
 
 }
-
-
 
 .carousel {
   margin-bottom: 3rem;
@@ -112,6 +112,7 @@
       ul {
         list-style: url("../assets/home/li.png");
         margin-top: 1rem;
+        padding-left: 1em;
         text-align: left;
         font-size: 1rem;
         line-height: 2em;
@@ -119,8 +120,8 @@
 
       .section11 {
         display: flex;
-        text-align: left;
         align-items: center;
+        text-align: left;
 
         img {
           width: 5rem;
@@ -214,7 +215,7 @@
   background-color: rgb(250, 250, 250);
 
   img {
-    width: 70%;
+    width: @width;
     margin-bottom: 1.5rem;
   }
 
@@ -245,7 +246,7 @@
       margin: 1rem 1.5rem 0 1.5rem;
 
       img {
-        width: 100%;
+        width: 80%;
         margin-bottom: 1em;
       }
     }
@@ -260,7 +261,7 @@
   .custom {
     display: flex;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     width: @width;
     margin: auto;
 
@@ -277,9 +278,7 @@
         width: 80%;
       }
     }
-
   }
-
 }
 
 .contacts {

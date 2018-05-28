@@ -2,20 +2,24 @@
 
 @media screen and (max-width: 950px) {
 
-  .intro .section, .team .section {
-    width: 100% !important;
-  }
+  body {
+    .intro .section, .team .section {
+      width: 100%;
+    }
 
-  .about, .intro h4{
-    width: 92% !important;
-  }
+    .about {
+      width: 92%;
+    }
 
-  .team .section img{
-    margin: 0 1.5em !important;
+    .intro h4 {
+      width: 95%;
+    }
+
+    .team .section img {
+      margin: 0 1.5em;
+    }
   }
 }
-
-
 
 .about {
   width: @width;
@@ -148,17 +152,14 @@
     width: 100%;
     overflow: hidden;
     margin: 0;
-    font-family: "微软雅黑";
   }
 
   .mapSub {
     position: relative;
-    height: 0;
     bottom: 7rem;
-    text-align: center;
+    height: 0;
     width: 100%;
     margin: auto;
-
     display: flex;
     justify-content: center;
 

@@ -41,7 +41,6 @@ class About extends React.Component {
           </div>
           <div className={styles.right}>
             <img src={require('../assets/logo1.png')} alt="" />
-
             <p>启尔智（中国）由行业资深内控与战略管理专家周如祥老师创立，至今已在广州、北京、上海、青岛、武汉、江西等地拥有十余家子公司。公司秉承启发智慧、助力成长的使命，整合行业内外优势资源，为有梦想的人搭建创业平台，凝聚所有人的智慧，为母婴企业发展提供系统解决方案。
             </p>
           </div>
@@ -78,7 +77,6 @@ class About extends React.Component {
               <div className={styles.text}>造会员价值的平台而努力！</div>
             </div>
           </div>
-
         </div>
 
         <div className={styles.team}>
