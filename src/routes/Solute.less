@@ -1,24 +1,92 @@
 @width: 70%;
 
 @media screen and (max-width: 950px) {
-  body{
-    .afterSale .section{
+  body {
+    .afterSale .section, .two {
       width: 100%;
     }
   }
 }
 
-.afterSale{
+.two {
+  width: @width;
+  margin: auto;
+  background-image: url("../assets/solute/book1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  .section {
+    display: flex;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    .section1 {
+      flex: 1;
+      padding: 0 2rem;
+
+      img {
+        width: 30%;
+      }
+
+      .h2 {
+        font-size: 1.2rem;
+        color: #ccc;
+        margin-top: 1em;
+
+        span {
+          color: rgb(0, 195, 206);
+        }
+      }
+    }
+
+    .section2 {
+      flex: 1;
+      display: flex;
+      text-align: left;
+      padding: 0 2rem;
+
+      .section22 {
+        flex: 1;
+        margin-right: 1em;
+        img {
+          width: 100%;
+        }
+      }
+
+      .section21 {
+        flex: 4;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .text1 {
+          font-size: 1.05rem;
+          font-weight: bold;
+        }
+
+        .text2 {
+          color: #aaa;
+        }
+      }
+    }
+
+  }
+}
+
+.afterSale {
   padding: 3rem 0;
   background-color: #FAFAFA;
 
-  .title{
+  .title {
     text-align: center;
     color: #ccc;
     font-size: 1.3rem;
     margin-bottom: 1rem;
 
-    span{
+    span {
       color: #06A4CC;
     }
   }
